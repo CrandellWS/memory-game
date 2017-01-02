@@ -26,6 +26,7 @@ public class DifficultySelectFragment extends Fragment {
 
 		DifficultyView difficulty1 = (DifficultyView) view.findViewById(R.id.select_difficulty_1);
 		difficulty1.setDifficulty(1, Memory.getHighStars(theme.id, 1));
+		difficulty1.setClickable(true);
 		setOnClick(difficulty1, 1);
 
 		DifficultyView difficulty2 = (DifficultyView) view.findViewById(R.id.select_difficulty_2);
