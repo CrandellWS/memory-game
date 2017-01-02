@@ -14,7 +14,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/button_start_lights"/>
     
-    <ImageView
+    <ImageButton
         android:id="@+id/start_game_button"
         android:layout_width="@dimen/start_game_button"
         android:layout_height="@dimen/start_game_button"
@@ -23,9 +23,11 @@
         android:layout_marginBottom="@dimen/start_game_button_margin"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/button_start" />
+        android:src="@drawable/button_start" >
+        <requestFocus />
+    </ImageButton>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/settings_game_button"
         android:layout_width="@dimen/settings_game_button"
         android:layout_height="@dimen/settings_game_button"
@@ -36,7 +38,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/button_settings" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/google_play_button"
         android:layout_width="@dimen/settings_game_button"
         android:layout_height="@dimen/settings_game_button"

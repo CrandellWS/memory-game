@@ -27,19 +27,22 @@ public class ThemeSelectFragment extends Fragment {
 		View animals = view.findViewById(R.id.theme_animals_container);
 		View monsters = view.findViewById(R.id.theme_monsters_container);
 
+		View animals_btn = view.findViewById(R.id.theme_animals);
+		View monsters_btn = view.findViewById(R.id.theme_monsters);
+
 		final Theme themeAnimals = Themes.createAnimalsTheme();
 		setStars((ImageView) animals.findViewById(R.id.theme_animals), themeAnimals, "animals");
 		final Theme themeMonsters = Themes.createMosterTheme();
 		setStars((ImageView) monsters.findViewById(R.id.theme_monsters), themeMonsters, "monsters");
 
-		animals.setOnClickListener(new View.OnClickListener() {
+		animals_btn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Shared.eventBus.notify(new ThemeSelectedEvent(themeAnimals));
 			}
 		});
 
-		monsters.setOnClickListener(new View.OnClickListener() {
+		monsters_btn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Shared.eventBus.notify(new ThemeSelectedEvent(themeMonsters));

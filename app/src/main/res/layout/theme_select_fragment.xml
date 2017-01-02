@@ -14,7 +14,7 @@
         android:layout_marginRight="@dimen/theme_margin"
         android:layout_weight="1" >
 
-        <ImageView
+        <ImageButton
             android:id="@+id/theme_animals"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -30,7 +30,7 @@
         android:layout_marginLeft="@dimen/theme_margin"
         android:layout_weight="1" >
 
-        <ImageView
+        <ImageButton
             android:id="@+id/theme_monsters"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
