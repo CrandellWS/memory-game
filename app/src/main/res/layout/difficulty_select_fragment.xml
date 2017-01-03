@@ -19,14 +19,16 @@
             android:focusable="true"
             android:id="@+id/select_difficulty_1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"/>
 
         <com.snatik.matches.ui.DifficultyView
             android:focusable="true"
             android:id="@+id/select_difficulty_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/difficulty_margin_top" />
+            android:layout_marginTop="@dimen/difficulty_margin_top"
+            android:background="?android:attr/selectableItemBackground"/>
     </LinearLayout>
 
     <LinearLayout
@@ -41,14 +43,16 @@
             android:focusable="true"
             android:id="@+id/select_difficulty_2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"/>
 
         <com.snatik.matches.ui.DifficultyView
             android:focusable="true"
             android:id="@+id/select_difficulty_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/difficulty_margin_top" />
+            android:layout_marginTop="@dimen/difficulty_margin_top"
+            android:background="?android:attr/selectableItemBackground"/>
     </LinearLayout>
 
     <LinearLayout
@@ -63,14 +67,16 @@
             android:focusable="true"
             android:id="@+id/select_difficulty_3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground" />
 
         <com.snatik.matches.ui.DifficultyView
             android:focusable="true"
             android:id="@+id/select_difficulty_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/difficulty_margin_top" />
+            android:layout_marginTop="@dimen/difficulty_margin_top"
+            android:background="?android:attr/selectableItemBackground" />
     </LinearLayout>
 
 </LinearLayout>

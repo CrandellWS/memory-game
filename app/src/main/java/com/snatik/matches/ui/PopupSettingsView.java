@@ -31,8 +31,6 @@ public class PopupSettingsView extends LinearLayout {
 		setBackgroundResource(R.drawable.settings_popup);
 		LayoutInflater.from(getContext()).inflate(R.layout.popup_settings_view, this, true);
 		mSoundText = (TextView) findViewById(R.id.sound_off_text);
-		TextView rateView = (TextView) findViewById(R.id.rate_text);
-		FontLoader.setTypeface(context, new TextView[] { mSoundText, rateView }, Font.GROBOLD);
 		mSoundImage = (ImageView) findViewById(R.id.sound_image);
 		View soundOff = findViewById(R.id.sound_off);
 		soundOff.setOnClickListener(new View.OnClickListener() {
@@ -42,18 +40,26 @@ public class PopupSettingsView extends LinearLayout {
 				setMusicButton();
 			}
 		});
-		View rate = findViewById(R.id.rate);
-		rate.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				final String appPackageName = Shared.context.getPackageName();
-				try {
-					Shared.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
-				} catch (android.content.ActivityNotFoundException anfe) {
-					Shared.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appPackageName)));
-				}
-			}
-		});
+//		TextView rateView = (TextView) findViewById(R.id.rate_text);
+//		FontLoader.setTypeface(context, new TextView[] { mSoundText, rateView }, Font.GROBOLD);
+//		View rate = findViewById(R.id.rate);
+//		rate.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				final String appPackageName = Shared.context.getPackageName();
+//				try {
+//
+//					Shared.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.amazon.rialto.cordova.webapp.webapp8267ee74a93641a2beec1b42")));
+//
+//				} catch (android.content.ActivityNotFoundException anfe) {
+//					try{
+//						Shared.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+//					}catch(android.content.ActivityNotFoundException anfe1) {
+//						Shared.activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appPackageName)));
+//					}
+//				}
+//			}
+//		});
 		setMusicButton();
 	}
 

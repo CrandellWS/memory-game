@@ -8,12 +8,20 @@
     android:paddingLeft="@dimen/popup_settings_padding_left">
 
     <LinearLayout
+        android:focusable="true"
         android:id="@+id/sound_off"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left|center_vertical"
         android:orientation="horizontal" 
-        android:layout_marginLeft="5dp">
+        android:layout_marginLeft="5dp"
+        android:nextFocusLeft="@+id/sound_off"
+        android:nextFocusUp="@+id/sound_off"
+        android:nextFocusRight="@+id/sound_off"
+        android:nextFocusDown="@+id/sound_off"
+        android:background="?android:attr/selectableItemBackground">
+
+        <requestFocus/>
 
         <ImageButton
             android:id="@+id/sound_image"
@@ -39,36 +47,37 @@
             android:textSize="@dimen/popup_settings_sound_text_size" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/rate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:layout_marginTop="5dp" 
-        android:layout_marginLeft="5dp">
+    <!--<LinearLayout-->
+        <!--android:focusable="true"-->
+        <!--android:id="@+id/rate"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="left|center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="5dp" -->
+        <!--android:layout_marginLeft="5dp">-->
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/popup_settings_sound_image_size"
-            android:layout_marginLeft="5dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/button_rate" />
+        <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/popup_settings_sound_image_size"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/button_rate" />-->
 
-        <TextView
-            android:id="@+id/rate_text"
-            android:layout_width="150dp"
-            android:layout_height="@dimen/popup_settings_sound_image_size"
-            android:layout_marginLeft="8dp"
-            android:gravity="left|center_vertical"
-            android:shadowColor="#2eaed9"
-            android:shadowDx="4"
-            android:shadowDy="4"
-            android:shadowRadius="4"
-            android:text="Rate this"
-            android:textColor="#FFFFFF"
-            android:textSize="@dimen/popup_settings_sound_text_size" />
-    </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/rate_text"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="@dimen/popup_settings_sound_image_size"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:shadowColor="#2eaed9"-->
+            <!--android:shadowDx="4"-->
+            <!--android:shadowDy="4"-->
+            <!--android:shadowRadius="4"-->
+            <!--android:text="Rate this"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="@dimen/popup_settings_sound_text_size" />-->
+    <!--</LinearLayout>-->
 
 </LinearLayout>

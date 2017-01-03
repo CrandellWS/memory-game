@@ -45,13 +45,13 @@ public class MenuFragment extends Fragment {
 				PopupManager.showPopupSettings();
 			}
 		});
-		mGooglePlayGameButton = (ImageView) view.findViewById(R.id.google_play_button);
-		mGooglePlayGameButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Toast.makeText(getActivity(), "Leaderboards will be available in the next game updates", Toast.LENGTH_LONG).show();
-			}
-		});
+//		mGooglePlayGameButton = (ImageView) view.findViewById(R.id.google_play_button);
+//		mGooglePlayGameButton.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				Toast.makeText(getActivity(), "Leaderboards will be available in the next game updates", Toast.LENGTH_LONG).show();
+//			}
+//		});
 		mStartButtonLights = (ImageView) view.findViewById(R.id.start_game_button_lights);
 		mTooltip = (ImageView) view.findViewById(R.id.tooltip);
 		mStartGameButton.setOnClickListener(new View.OnClickListener() {
@@ -97,10 +97,10 @@ public class MenuFragment extends Fragment {
 		settingsAnimator.setInterpolator(new AccelerateInterpolator(2));
 		settingsAnimator.setDuration(300);
 
-		// google play button
-		ObjectAnimator googlePlayAnimator = ObjectAnimator.ofFloat(mGooglePlayGameButton, "translationY", Utils.px(120));
-		googlePlayAnimator.setInterpolator(new AccelerateInterpolator(2));
-		googlePlayAnimator.setDuration(300);
+//		// google play button
+//		ObjectAnimator googlePlayAnimator = ObjectAnimator.ofFloat(mGooglePlayGameButton, "translationY", Utils.px(120));
+//		googlePlayAnimator.setInterpolator(new AccelerateInterpolator(2));
+//		googlePlayAnimator.setDuration(300);
 
 		// start button
 		ObjectAnimator startButtonAnimator = ObjectAnimator.ofFloat(mStartGameButton, "translationY", Utils.px(130));
@@ -108,7 +108,8 @@ public class MenuFragment extends Fragment {
 		startButtonAnimator.setDuration(300);
 
 		AnimatorSet animatorSet = new AnimatorSet();
-		animatorSet.playTogether(titleAnimator, lightsAnimatorX, lightsAnimatorY, tooltipAnimator, settingsAnimator, googlePlayAnimator, startButtonAnimator);
+//		animatorSet.playTogether(titleAnimator, lightsAnimatorX, lightsAnimatorY, tooltipAnimator, settingsAnimator, googlePlayAnimator, startButtonAnimator);
+		animatorSet.playTogether(titleAnimator, lightsAnimatorX, lightsAnimatorY, tooltipAnimator, settingsAnimator, startButtonAnimator);
 		animatorSet.addListener(adapter);
 		animatorSet.start();
 	}

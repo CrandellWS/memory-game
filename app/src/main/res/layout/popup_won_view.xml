@@ -4,16 +4,19 @@
     android:layout_height="match_parent" >
 
     <ImageView
+        android:focusable="true"
         android:id="@+id/button_back"
         android:layout_width="@dimen/popup_button_back"
         android:layout_height="@dimen/popup_button_back"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="@dimen/popup_button_back_bottom"
+        android:background="?android:attr/selectableItemBackground"
         android:layout_marginLeft="@dimen/popup_button_back_left"
         android:src="@drawable/button_back" />
 
     <ImageView
+        android:focusable="true"
         android:id="@+id/button_next"
         android:layout_width="@dimen/popup_button_back"
         android:layout_height="@dimen/popup_button_back"
@@ -21,6 +24,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="@dimen/popup_button_back_bottom"
         android:layout_marginRight="@dimen/popup_button_back_left"
+        android:background="?android:attr/selectableItemBackground"
         android:src="@drawable/button_again" />
 
     <ImageView
