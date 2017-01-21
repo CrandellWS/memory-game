@@ -4,7 +4,8 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
 
     <application
         android:name=".GameApplication"
