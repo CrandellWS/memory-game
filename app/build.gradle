@@ -7,9 +7,9 @@ android {
     defaultConfig {
         applicationId "ws.crandell.matches.snatik"
         minSdkVersion 11
-        targetSdkVersion 24
-        versionCode 1005
-        versionName "1.0.05"
+        targetSdkVersion 25
+        versionCode 1100
+        versionName "MGFK-v1.1.00"
     }
     buildTypes {
         release {
@@ -22,5 +22,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:appcompat-v7:25.1.1'
 }
