@@ -22,6 +22,10 @@ https://circleci.com/gh/CrandellWS/memory-game/2#artifacts/containers/0
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
 
+<a target="_blank" href="https://www.amazon.com/Memory-Game-For-Kids-Free/dp/B01MS3PXJX/fire-tv?&_encoding=UTF8&tag=cra02-20&linkCode=ur2&linkId=06aff7a61cec741c36eeb662eea1e67f&camp=1789&creative=9325">
+<img src="//ir-na.amazon-adsystem.com/e/ir?t=cra02-20&l=ur2&o=1" width="1" height="1" border="0" alt="Memory Game For Kids Free on Amazon FireTV" style="border:none !important; margin:0px !important;" /></a>
+
+
 ### Next
 
 - [ ] 2 player game
