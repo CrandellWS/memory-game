@@ -14,6 +14,8 @@ If you have more ideas or you want to add more options / themes / sounds or what
 
 <img src="http://www.sromku.com/static/img/pregnancy_memorygame_preview.png"/>
 
+https://circleci.com/gh/CrandellWS/memory-game/2#artifacts/containers/0
+
 ### Download It
 
 <a href="https://play.google.com/store/apps/details?id=com.snatik.matches">
